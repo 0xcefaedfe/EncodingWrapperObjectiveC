@@ -1,0 +1,9 @@
+*/build/*
+._*
+.DS_Store
+*.pbxuser
+*.mode1v3
+*.perspectivev3
+config.user.h
+config.build.h
+lang/*/*.xib
