@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0234FECA136EFC66009340AB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234FEC9136EFC66009340AB /* UIKit.framework */; };
+		0234FECC136EFC66009340AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234FECB136EFC66009340AB /* Foundation.framework */; };
+		0234FECE136EFC67009340AB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234FECD136EFC66009340AB /* CoreGraphics.framework */; };
+		0234FED4136EFC67009340AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0234FED2136EFC67009340AB /* InfoPlist.strings */; };
+		0234FED7136EFC67009340AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0234FED6136EFC67009340AB /* main.m */; };
+		0234FEDA136EFC67009340AB /* EncodingSampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0234FED9136EFC67009340AB /* EncodingSampleAppDelegate.m */; };
+		0234FEDD136EFC67009340AB /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0234FEDB136EFC67009340AB /* MainWindow.xib */; };
+		0234FEEA136EFC80009340AB /* libEncodingWrapper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0234FEE9136EFC80009340AB /* libEncodingWrapper.a */; };
+		0234FEED136F02CE009340AB /* AddMedia.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0234FEEC136F02CE009340AB /* AddMedia.xml */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0234FEC5136EFC66009340AB /* EncodingSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EncodingSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0234FEC9136EFC66009340AB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0234FECB136EFC66009340AB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0234FECD136EFC66009340AB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0234FED1136EFC67009340AB /* EncodingSample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EncodingSample-Info.plist"; sourceTree = "<group>"; };
+		0234FED3136EFC67009340AB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0234FED5136EFC67009340AB /* EncodingSample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EncodingSample-Prefix.pch"; sourceTree = "<group>"; };
+		0234FED6136EFC67009340AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0234FED8136EFC67009340AB /* EncodingSampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EncodingSampleAppDelegate.h; sourceTree = "<group>"; };
+		0234FED9136EFC67009340AB /* EncodingSampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EncodingSampleAppDelegate.m; sourceTree = "<group>"; };
+		0234FEDC136EFC67009340AB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0234FEE5136EFC80009340AB /* EncodingAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingAction.h; sourceTree = "<group>"; };
+		0234FEE6136EFC80009340AB /* EncodingActionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingActionDelegate.h; sourceTree = "<group>"; };
+		0234FEE7136EFC80009340AB /* EncodingActionQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingActionQueue.h; sourceTree = "<group>"; };
+		0234FEE8136EFC80009340AB /* EncodingActionQueueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncodingActionQueueDelegate.h; sourceTree = "<group>"; };
+		0234FEE9136EFC80009340AB /* libEncodingWrapper.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEncodingWrapper.a; sourceTree = "<group>"; };
+		0234FEEC136F02CE009340AB /* AddMedia.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AddMedia.xml; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0234FEC2136EFC66009340AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0234FECA136EFC66009340AB /* UIKit.framework in Frameworks */,
+				0234FECC136EFC66009340AB /* Foundation.framework in Frameworks */,
+				0234FECE136EFC67009340AB /* CoreGraphics.framework in Frameworks */,
+				0234FEEA136EFC80009340AB /* libEncodingWrapper.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0234FEBA136EFC66009340AB = {
+			isa = PBXGroup;
+			children = (
+				0234FEE3136EFC80009340AB /* EncodingWrapper */,
+				0234FECF136EFC67009340AB /* EncodingSample */,
+				0234FEC8136EFC66009340AB /* Frameworks */,
+				0234FEC6136EFC66009340AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0234FEC6136EFC66009340AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0234FEC5136EFC66009340AB /* EncodingSample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0234FEC8136EFC66009340AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0234FEC9136EFC66009340AB /* UIKit.framework */,
+				0234FECB136EFC66009340AB /* Foundation.framework */,
+				0234FECD136EFC66009340AB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0234FECF136EFC67009340AB /* EncodingSample */ = {
+			isa = PBXGroup;
+			children = (
+				0234FED8136EFC67009340AB /* EncodingSampleAppDelegate.h */,
+				0234FED9136EFC67009340AB /* EncodingSampleAppDelegate.m */,
+				0234FEDB136EFC67009340AB /* MainWindow.xib */,
+				0234FED0136EFC67009340AB /* Supporting Files */,
+			);
+			path = EncodingSample;
+			sourceTree = "<group>";
+		};
+		0234FED0136EFC67009340AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0234FEEB136F02CE009340AB /* XML */,
+				0234FED1136EFC67009340AB /* EncodingSample-Info.plist */,
+				0234FED2136EFC67009340AB /* InfoPlist.strings */,
+				0234FED5136EFC67009340AB /* EncodingSample-Prefix.pch */,
+				0234FED6136EFC67009340AB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0234FEE3136EFC80009340AB /* EncodingWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				0234FEE4136EFC80009340AB /* Headers */,
+				0234FEE9136EFC80009340AB /* libEncodingWrapper.a */,
+			);
+			path = EncodingWrapper;
+			sourceTree = "<group>";
+		};
+		0234FEE4136EFC80009340AB /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				0234FEE5136EFC80009340AB /* EncodingAction.h */,
+				0234FEE6136EFC80009340AB /* EncodingActionDelegate.h */,
+				0234FEE7136EFC80009340AB /* EncodingActionQueue.h */,
+				0234FEE8136EFC80009340AB /* EncodingActionQueueDelegate.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		0234FEEB136F02CE009340AB /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				0234FEEC136F02CE009340AB /* AddMedia.xml */,
+			);
+			path = XML;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0234FEC4136EFC66009340AB /* EncodingSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0234FEE0136EFC67009340AB /* Build configuration list for PBXNativeTarget "EncodingSample" */;
+			buildPhases = (
+				0234FEC1136EFC66009340AB /* Sources */,
+				0234FEC2136EFC66009340AB /* Frameworks */,
+				0234FEC3136EFC66009340AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EncodingSample;
+			productName = EncodingSample;
+			productReference = 0234FEC5136EFC66009340AB /* EncodingSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0234FEBC136EFC66009340AB /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 0234FEBF136EFC66009340AB /* Build configuration list for PBXProject "EncodingSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0234FEBA136EFC66009340AB;
+			productRefGroup = 0234FEC6136EFC66009340AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0234FEC4136EFC66009340AB /* EncodingSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0234FEC3136EFC66009340AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0234FED4136EFC67009340AB /* InfoPlist.strings in Resources */,
+				0234FEDD136EFC67009340AB /* MainWindow.xib in Resources */,
+				0234FEED136F02CE009340AB /* AddMedia.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0234FEC1136EFC66009340AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0234FED7136EFC67009340AB /* main.m in Sources */,
+				0234FEDA136EFC67009340AB /* EncodingSampleAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0234FED2136EFC67009340AB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0234FED3136EFC67009340AB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0234FEDB136EFC67009340AB /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0234FEDC136EFC67009340AB /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0234FEDE136EFC67009340AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0234FEDF136EFC67009340AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		0234FEE1136EFC67009340AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EncodingSample/EncodingSample-Prefix.pch";
+				INFOPLIST_FILE = "EncodingSample/EncodingSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/EncodingWrapper\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0234FEE2136EFC67009340AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "EncodingSample/EncodingSample-Prefix.pch";
+				INFOPLIST_FILE = "EncodingSample/EncodingSample-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/EncodingWrapper\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0234FEBF136EFC66009340AB /* Build configuration list for PBXProject "EncodingSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0234FEDE136EFC67009340AB /* Debug */,
+				0234FEDF136EFC67009340AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0234FEE0136EFC67009340AB /* Build configuration list for PBXNativeTarget "EncodingSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0234FEE1136EFC67009340AB /* Debug */,
+				0234FEE2136EFC67009340AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0234FEBC136EFC66009340AB /* Project object */;
+}

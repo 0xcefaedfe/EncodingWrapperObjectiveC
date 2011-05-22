@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<query>
+    <userid>[USERID]</userid>
+    <userkey>[USERKEY]</userkey>
+    <action>AddMedia</action>
+    <source>[SOURCE]</source>
+    <notify>[NOTIFY]</notify>
+    <instant>no</instant>
+    <format>
+        <output>iphone_stream</output>
+        <destination>[DESTINATION]</destination>
+    </format>
+
+</query>

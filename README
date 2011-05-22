@@ -1,0 +1,52 @@
+Encoding.com Objective-C Wrapper
+
+Components
+
+Binary
+libEncodingWrapper.a
+Universal static library for iOS, for architectures armv6, armv7 and i386
+
+Header files
+EncodingAction.h
+EncodingActionDelegate.h
+EncodingActionQueue.h
+EncodingActionQueueDelegate.h
+
+Requirements
+iOS 4.x
+
+Usage
+1. Add libEncodingWrapper.a to your project
+2. Add the header files (EncodingAction*.h) to your project
+3. Create an instance of EncodingAction, eg EncodingAction *addMediaAction = [[EncodingAction alloc] initWithDelegate:self];
+4. Implement the two delegate methods: encodingAction:didFinishRunningWithResults: and encodingAction:didFailWithError:
+5. Create the query parameters. You have two options, one to send the parameters in the raw XML as described at http://www.encoding.com/wdocs/ApiDoc OR create an NSDictionary with the parameters and set the parameters property of the action.
+6. Start the call: [addMediaAction start]
+7. Handle results or errors. In case of a network error or similar cases the encodingAction:didFailWithError: delegate method will be called. Results will be delivered to the encodingAction:didFinishRunningWithResults: delegate call in an NSDictionary. The results dictionary will contain any errors that are returned by encoding.com
+
+You can use the simple queue implementation included in the library to chain several commands. After creating an instance of EncodingActionQueue, you can add EncodingAction objects to the queue with the addAction: method. The following queue operations are currently supported:
+
+- (void)addAction:(EncodingAction*)action;
+Adds an action to the queue
+
+- (void)removeAction:(EncodingAction*)action;
+Removes an action
+
+- (NSUInteger)numberOfActions;
+Returns the number of actions in the queue
+
+- (EncodingAction*)actionInProgress;
+Returns the currently running action
+
+- (void)start;
+Starts queue
+- (void)stop;
+Stops and empties the queue
+
+- (void)pause;
+Stops the queue but doesn't remove all object
+
+- (void)resume;
+Resumes a paused queue
+
+If you add an action to the queue, the action's delegate is overwritten to be the queue object, you will receive EncodingQueueDelegate calls instead.
